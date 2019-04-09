@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvfirst"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Enter First Number:"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="25dp"
+        android:height="40dp"
+        />
+
+    <EditText
+        android:id="@+id/etFirst"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvfirst"
+        android:hint="number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="25dp"
+        android:height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvfirst"
+        android:hint="Enter Second Number:"
+        android:layout_marginLeft="5dp"
+        android:height="40dp"
+        />
+
+    <EditText
+        android:id="@+id/etSecond"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvSecond"
+        android:layout_below="@+id/tvfirst"
+        android:hint="number"
+        android:height="40dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <Button
+        android:id="@+id/btncal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSecond"
+        android:hint="Calculate"
+        android:layout_marginBottom="25dp"
+        android:layout_alignEnd="@id/etSecond"
+        />
+    <Button
+        android:id="@+id/btnclose"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btncal"
+        android:hint="close"
+        android:layout_alignEnd="@id/etSecond"
+        />
+
+
+</RelativeLayout>
